@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card_photo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card_photo {
+    position: relative;
+}
+
+.overlay {
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: hsla(178, 100%, 50%, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+}
+
+.overlay img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+}
+
+.card_photo:hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.card_details h2{
+    margin: 8px 0;
+}
+
+.card_details h2 span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card_details p{
+    color: hsl(215, 51%, 70%);
+}
+
+.card_more_detils {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.price>p {
+    color: hsl(178, 100%, 50%);
+}
+
+.time{
+    display: flex;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.line {
+    background-color: hsl(215, 51%, 70%);
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+}
+
+.card_author_details {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card_author_details img {
+    border: 1px white solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.card_author_details span{
+    color: white;
+}
+
+.card_author_details span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
